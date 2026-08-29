@@ -1,0 +1,26 @@
+cd "C:\Users\AmarJyoti Ray\Downloads\Pandas\PANDAS-MODULE"
+
+git init
+
+# Create .gitignore and add Python/VS Code files you don't want to upload
+@"
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+"@ | Out-File -Encoding utf8 .gitignore
+
+git status
+
+git add .
+
+git commit -m "Initial commit"
+
+git branch -M main
+
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+
+git remote -v
+
+git push -u origin main
